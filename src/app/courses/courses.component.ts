@@ -20,4 +20,25 @@ export class CoursesComponent {
       name:'angular',
     }
   ]
+  addCourse(){
+    this.courses.push(
+      {
+        id:4,
+        name:'nodejs'
+      }
+    )
+  }
+  removeCourse(course: object) {
+    let index = this.courses.findIndex(c => c === course);
+    if (index !== -1) {
+      this.courses.splice(index, 1);
+    }
+  }
+  isShow:boolean=false
+  showCourses(){
+    this.isShow=!this.isShow
+  }
+  trackCourse(index:number,course:any){
+    return course ? course.id : null
+  }
 }

@@ -6,9 +6,13 @@
     No courses
 </ng-template>
 
-<ul>
-    <li *ngFor="let course of courses" class="list">
+<button class="btn btn-success" (click)="addCourse()">Add Course</button>
+<button *ngIf="!isShow" class="btn btn-secondary" (click)="showCourses()">Show courses</button>
+<button *ngIf="isShow" class="btn btn-secondary" (click)="showCourses()">Hidd courses</button>
+<ul *ngIf="isShow">
+    <li *ngFor="let course of courses;trackBy : trackCourse" class="list">
         <p>{{course.id}}-</p>
         <p>{{course.name}}</p>
+        <button class="btn btn-danger" (click)="removeCourse(course)">Remove course</button>
     </li>
 </ul>
