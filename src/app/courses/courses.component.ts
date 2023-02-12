@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent {
-  courses=[]
+  courses=[
+    {
+      id:1,
+      name:'react',
+    },
+    {
+      id:2,
+      name:'vue',
+    },
+    {
+      id:3,
+      name:'angular',
+    }
+  ]
 }

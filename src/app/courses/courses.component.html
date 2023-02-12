@@ -5,3 +5,10 @@
 <ng-template #emptyCourses>
     No courses
 </ng-template>
+
+<ul>
+    <li *ngFor="let course of courses" class="list">
+        <p>{{course.id}}-</p>
+        <p>{{course.name}}</p>
+    </li>
+</ul>
