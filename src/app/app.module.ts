@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
 import { CoursesComponent } from './courses/courses.component';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FavoriteComponent,
     PanelComponent,
-    CoursesComponent
+    CoursesComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule
