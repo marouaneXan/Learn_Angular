@@ -1,1 +1,12 @@
-<p>switch works!</p>
+<p>switch component</p>
+<div class="buttons">
+    <button [class.active]="course=='angular'" class="btn" (click)="course='angular'">Angular</button>
+    <button [class.active]="course=='react'" class="btn" (click)="course='react'">React</button>
+    <button [class.active]="course=='vue'" class="btn" (click)="course='vue'">Vue</button>
+</div>
+<div [ngSwitch]="course">
+    <p *ngSwitchCase="'angular'">Angular</p>
+    <p *ngSwitchCase="'react'">React</p>
+    <p *ngSwitchCase="'vue' ">Vue</p>
+</div>
+
