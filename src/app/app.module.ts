@@ -6,6 +6,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
 import { CoursesComponent } from './courses/courses.component';
 import { SwitchComponent } from './switch/switch.component';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SwitchComponent } from './switch/switch.component';
     FavoriteComponent,
     PanelComponent,
     CoursesComponent,
-    SwitchComponent
+    SwitchComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule
